@@ -16,7 +16,7 @@ class MyFirstGUI:
         self.B.pack()
 
         self.img = ImageTk.PhotoImage(self.curr.getImage())
-        self.panel = Label(image=self.img)
+        self.panel = Label(master, image=self.img)
         self.panel.image = self.img
         self.panel.pack()
 
@@ -27,8 +27,8 @@ class MyFirstGUI:
         self.curr = self.curr.getNext(key)
         self.choices = self.curr.getOptions()
 
-        img2 = ImageTk.PhotoImage(self.curr.getImage())
-        self.panel.configure(image = img2)
+        self.img = ImageTk.PhotoImage(self.curr.getImage())
+        self.panel.configure(image = self.img)
         self.panel.image = self.img
 
         self.B["text"] = key
