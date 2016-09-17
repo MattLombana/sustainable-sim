@@ -1,16 +1,22 @@
-threshold = 0.90 # arbitrary threshold; user must be happier than this
+from utils.conf import sustainable_sim as ss
+import requests
 
+threshold = 0.90  # arbitrary threshold; user must be happier than this
+threshold = ss['happiness_threshold']
+image_url = "{}/{}/{}".format(ss['server']['ip_address'], ss['server']['photo_path'], ss['filename'])
 
-def sendphoto():
-   """gets the photo url, makes request to Emotion API to get json """
-
-
-def parseEmotions():
-    """return a float representing how happy the user is in the photo"""
-    # parse the json here
 
 def isHappyEnough():
-    """return a boolean of whether or not the user is happier than threshold"""
+    """gets the photo url, makes request to Emotion API to get json """
+    image_url = ""
+    json_data = {"url": image_url}
+    response = requests.post(url="",
+        data=json_data,
+        verify=False,
+        headers={'content-type': 'application/json'})
+    response_json = response.json()
+    happiness = response_json[0]['scores']['happiness']
+    return happiness > threshold
 
 
 if __name__ == '__main__':

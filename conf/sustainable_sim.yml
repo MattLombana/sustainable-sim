@@ -5,4 +5,4 @@ server:
   username: root
   ip_address: 10.20.30.40
   photo_path: /tmp
-
+happiness_threshold: .90
