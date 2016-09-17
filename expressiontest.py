@@ -16,5 +16,6 @@ def isHappyEnough():
     happiness = response_json[0]['scores']['happiness']
     return happiness > threshold
 
+
 if __name__ == '__main__':
     isHappyEnough()
