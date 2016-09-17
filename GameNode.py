@@ -15,6 +15,9 @@ class GameNode:
       """Gets all possible choices that the player can choose"""
       return list(self.nexts.keys())
 
+   def getImage(self):
+      return self.image
+
    def getNext(self, key):
       """Returns next scene, given that the player chose "key" """
       if key in self.nexts:
