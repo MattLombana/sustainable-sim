@@ -1,7 +1,6 @@
 from utils.conf import sustainable_sim as ss
 import requests
 
-threshold = 0.90  # arbitrary threshold; user must be happier than this
 threshold = ss['happiness_threshold']
 image_url = "{}/{}/{}".format(ss['server']['ip_address'], ss['server']['photo_path'], ss['filename'])
 
