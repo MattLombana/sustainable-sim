@@ -13,9 +13,9 @@ class Game:
     eighth = gn("gwg23g", "a.gif")
 
     fourth.link("4-5", fifth)
-    fourth.link("5-6", sixth)
-    fourth.link("6-7", seventh)
-    fourth.link("7-8", eighth)
+    fifth.link("5-6", sixth)
+    sixth.link("6-7", seventh)
+    seventh.link("7-8", eighth)
 
     second.link( "But all roads lead to", end)
     eighth.link("But all roads lead to", end)
