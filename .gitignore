@@ -1,0 +1,7 @@
+# .gitignore
+
+# Ignore local config files
+*.local*
+
+# Ignore pyc files
+*.pyc
