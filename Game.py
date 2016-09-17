@@ -22,5 +22,6 @@ class Game:
     eighth.link("But all roads lead to", end)
     end.link ("But all roads lead to", end)
 
+
     def __init__(self):
         print("loaded game")
