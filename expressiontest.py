@@ -4,7 +4,6 @@ import requests
 threshold = ss['happiness_threshold']
 image_url = "{}/{}/{}".format(ss['server']['ip_address'], ss['server']['photo_path'], ss['filename'])
 
-
 def isHappyEnough():
     """gets the photo url, makes request to Emotion API to get json """
     image_url = ""
@@ -16,7 +15,6 @@ def isHappyEnough():
     response_json = response.json()
     happiness = response_json[0]['scores']['happiness']
     return happiness > threshold
-
 
 if __name__ == '__main__':
     isHappyEnough()
