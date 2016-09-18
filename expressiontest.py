@@ -3,10 +3,10 @@ import json
 import requests
 
 
-def isHappyEnough():
+def isHappyEnough(filename):
     """gets the photo url, makes a request to Emotion API to get json """
     threshold = ss['happiness_threshold']
-    image_url = "http://{}/{}/{}".format(ss['server']['ip_address'], ss['server']['photo_path'], ss['filename'])
+    image_url = "http://{}/{}/{}".format(ss['server']['ip_address'], ss['server']['photo_path'], filename)
     api_url = ss['api']['url']
     api_key = ss['api']['subscription_key']
 
