@@ -14,13 +14,28 @@ class Game:
     # start_node = gn("This should be the first panel.", "./assets/images/Alex in High School.jpg", "Lets Get Going!", desk_node)
 
 
+
+
+     # def __init__(self, prompt="", image="assets/images/lost.gif", button_1="", child_1=None, button_2="", child_2=None, can_progress=True)
     end_node = gn("Thanks for playing our game!", "./assets/images/rome.gif")
     bad_ending_node = gn("Unfortunately, that was a bad choice. Better luck next time!", "./assets/images/pme.jpg", "End Game", end_node)
+
+    postsplit = gn("That was great.", "05-cominganyway.jpg", "All roads lead to...", end_node)
+
+    nophoto = gn("That's pretty cool. What do you think about this teaser photo from our game?", "53-tractor.jpg", "All roads lead to...", end_node)
+    photonode = gn("Alright! Say, 'Water conservation!'", "01-heyyou.jpg",
+        "Take a photo!", end_node)
+    home = gn("Hey there! Thanks for checking out our hack. Get ready for photos!", "00-instr.jpg",
+        "Take a photo!", photonode,
+        "Or, don't take a photo.", nophoto)
+
+
+
 
 
 # def __init__(self, prompt="", image="assets/images/lost.gif", button_1="", child_1=None, button_2="", child_2=None, can_progress=True)
 
-    instruction = gn("You are being asked to take a photo right now", "./assets/images/b.gif", start, "Go from statrt to second.", False)
+    # instruction = gn("You are being asked to take a photo right now", "./assets/images/b.gif", start, "Go from statrt to second.", False)
 
     # second = gn("You are being asked to take a photo right now", "./assets/images/b.gif", start, "Go from statrt to second.", False)
     # second.link("But all roads lead to", end)
