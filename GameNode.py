@@ -1,4 +1,5 @@
 from PIL import Image
+from strings import *
 from utils.conf import node_map as nm
 
 
@@ -60,20 +61,29 @@ class GameNode:
 
 
     def createTree(self):
-        prompt_1 = nm['{}'.format(self.button_1)]['prompt']
-        prompt_2 = nm['{}'.format(self.button_2)]['prompt']
-        image_1 = nm['{}'.format(self.button_1)]['image']
-        image_2 = nm['{}'.format(self.button_2)]['image']
-        child_1_button_1 = nm['{}'.format(self.button_1)]['button_1']
-        child_1_button_2 = nm['{}'.format(self.button_1)]['button_2']
-        child_2_button_1 = nm['{}'.format(self.button_2)]['button_1']
-        child_2_button_2 = nm['{}'.format(self.button_2)]['button_2']
-        picture_1 = "./assets/images/" + nm['{}'.format(self.button_1)]['take_picture']
-        picture_2 = "./assets/images/" + nm['{}'.format(self.button_2)]['take_picture']
+        print("\n\n\n\n\nnode button 1: {}".format(self.button_1))
+        print("node button 2: {}".format(self.button_2))
 
-        child_node_1 = GameNode(self, prompt=prompt_1, image=image_2, button_1=child_1_button_1, child_1=None, button_2=child_1_button_2, child_2=None, can_progress=picture_1)
+        prompt_1 = eval(nm['{}'.format(self.button_1)]['prompt'])
+        prompt_2 = eval(nm['{}'.format(self.button_2)]['prompt'])
+        image_1 = "./assets/images/" + nm['{}'.format(self.button_1)]['image']
+        image_2 = "./assets/images/" + nm['{}'.format(self.button_2)]['image']
+        child_1_button_1 = eval(nm['{}'.format(self.button_1)]['child_button_name_1'])
+        print(child_1_button_1)
+        child_1_button_2 = eval(nm['{}'.format(self.button_1)]['child_button_name_2'])
+        print(child_1_button_2)
+        child_2_button_1 = eval(nm['{}'.format(self.button_2)]['child_button_name_1'])
+        print(child_2_button_1)
+        child_2_button_2 = eval(nm['{}'.format(self.button_2)]['child_button_name_2'])
+        print(child_2_button_2)
+        picture_1 = nm['{}'.format(self.button_1)]['take_photo']
+        picture_2 = nm['{}'.format(self.button_2)]['take_photo']
 
-        child_node_2 = GameNode(self, prompt=prompt_2, image=image_2, button_1=child_2_button_1, child_1=None, button_2=child_2_button_2, child_2=None, can_progress=picture_2)
+        print("creating GameNode for {}".format(prompt_1))
+        print("creating GameNode for {}".format(prompt_2))
+        child_node_1 = GameNode(prompt=prompt_1, image=image_2, button_1=child_1_button_1, child_1=None, button_2=child_1_button_2, child_2=None, can_progress=picture_1)
+
+        child_node_2 = GameNode(prompt=prompt_2, image=image_2, button_1=child_2_button_1, child_1=None, button_2=child_2_button_2, child_2=None, can_progress=picture_2)
 
         self.child_1 = child_node_1
         self.child_2 = child_node_2
