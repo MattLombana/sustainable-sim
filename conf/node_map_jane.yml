@@ -9,7 +9,7 @@
 
 Let's get started!:
   prompt: desk_al_1
-  child_button_name_1: What?
+  child_button_name_1: what
   child_button_name_2: ""
   image: 01-heyyou.jpg
   take_photo: false
@@ -23,7 +23,7 @@ What?:
 
 # hotel cali
 I'm hanging out with Eve.:
-  prompt: You had a fun evening hanging out with Eve, although Alex looked forlorn. Maybe try again for a more interesting adventure?
+  prompt: disappoint
   child_button_name_1: ""
   child_button_name_2: ""
   image: lost.gif
@@ -74,7 +74,7 @@ Sounds good.: # the node with the fence
 
 # hotel cali
 Yeah, Alex, relax a little.:
-  prompt: Alex gave up and went home, and you and Eve barely explored the forest before it got too dark.
+  prompt: adis
   child_button_name_1: ""
   child_button_name_2: ""
   image: lost.gif
@@ -95,17 +95,18 @@ I don't know... Let's find out.:
   take_photo: false
 
 Oh, and it looks like there's a little water running now. I'm hoping that means that there's going to be enough water in the reservoir. More minerals have been getting into the municipal water supply than usual because of the low water levels and making the water all discolored. Maybe the filtration system can catch up now.:
-  prompt: "Hey, let's take a picture. Say water conservation!"
-  child_button_name_1: al_water_fact
-  child_button_name_2: al_pict_water
+  prompt: saycheese
+  child_button_name_1: tip
+  child_button_name_2: ""
   image: lost.gif
-  take_photo: false
+  take_photo: true
 
 Let's take a picture here! Say, water conservation!:
-  prompt: "Hey, let's take a picture. Say water conservation!"
-  child_button_name_1: al_water_fact
-  child_button_name_2: al_pict_water
+  prompt: saycheese
+  child_button_name_1: tip
+  child_button_name_2: ""
   image: lost.gif
-  take_photo: false
+  take_photo: true
+
 
 # They're bears! Let's go, let's go, let's go!:

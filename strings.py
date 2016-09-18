@@ -60,7 +60,10 @@ bear_fact = u = "This makes me think about how the Asiatic Black Bear is endange
 #falls and breaks ankle
 romantic_op = "Are you alright?! Do you need help? I'll carry you!"
 tip = "Nearly 60 percent of a person's household water footprint can go toward lawn and garden maintenance."
-
+what = "What?"
+disappoint = "You had a fun evening hanging out with Eve, although Alex looked forlorn. Maybe try again for a more interesting adventure?"
+adis =  "Alex gave up and went home, and you and Eve barely explored the forest before it got too dark."
+saycheese = "Hey, let's take a picture. Say water conservation!"
 
 
 #images
