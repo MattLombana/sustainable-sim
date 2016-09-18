@@ -5,11 +5,9 @@ import os
 import pygame
 import pygame.camera
 
+
 username = ss['server']['username']
 ip_address = ss['server']['ip_address']
-
-
-
 
 
 def start_camera():
@@ -20,6 +18,7 @@ def start_camera():
     cam = pygame.camera.Camera(camera_name, (2048, 1620))
     cam.start()
     return cam
+
 
 def take_photo(camera, filename):
     """Takes a photo, and uploads it to a remote server
