@@ -1,25 +1,23 @@
 from GameNode import GameNode as gn
 
 class Game:
-    start = gn("first thing", "./assets/images/a.gif")
-    second = gn("second thing", "./assets/images/b.gif", start, "tob", False)
-    # third = gn("also off the first thing", "./assets/images/c.gif", start, "toc")
-    end = gn("rome", "./assets/images/rome.gif")
+    start = gn("We will ask you to say some things and take some photos along the way.", "./assets/images/a.gif")
 
-    # fourth = gn("another", "./assets/images/a.gif")
-    # fifth = gn("asdf", "./assets/images/a.gif")
-    # sixth = gn("23f3f", "./assets/images/a.gif")
-    # seventh = gn("anasdfsdfother", "./assets/images/a.gif")
-    # eighth = gn("gwg23g", "./assets/images/a.gif")
+    second = gn("Did you know that on average, 10 gallons per day of your water footprint" + 
+        " (or 14 percent of your indoor use) is lost to leaks?", "./assets/images/b.gif", 
+        start, "Go from start to second!", False)
 
-    # third.link("3-4", fourth)
-    # fourth.link("4-5", fifth)
-    # fifth.link("5-6", sixth)
-    # sixth.link("6-7", seventh)
-    # seventh.link("7-8", eighth)
 
-    second.link( "But all roads lead to", end)
-    # eighth.link("But all roads lead to", end)
+    end = gn("Thanks for playing our game!", "./assets/images/rome.gif", second, "Exit")
+    third = gn("1994 was the year that federally mandated low-flow showerheads, " +
+     "faucets, and toilets started to appear on the scene in significant numbers.", 
+     "./assets/images/c.gif", start, "Go from start to third. No photo.")
+
+
+    third.link("Lalalaa", end)
+
+    dummy = gn("nothing here", "./assets/images/lost.gif", end, "Exit")
+
     # end.link ("But all roads lead to", end)
 
     def __init__(self):
