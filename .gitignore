@@ -6,5 +6,4 @@
 # Ignore pyc files
 *.pyc
 
-# Ignore all jpeg files
-*.jpg
+

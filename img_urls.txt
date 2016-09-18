@@ -1,0 +1,9 @@
+alien_ship_interior = "https://upload.wikimedia.org/wikipedia/commons/3/34/Enterprise-D_bridge_stations.jpg"
+
+classroom = "https://farm5.staticflickr.com/4043/4541322899_4e4d9e0384_b.jpg"
+
+hiking = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Mohonk_Mountain_House_2011_Hiking_Trail_against_Guest_Rooms_2_FRD_3281.jpg/1280px-Mohonk_Mountain_House_2011_Hiking_Trail_against_Guest_Rooms_2_FRD_3281.jpg"
+
+forest_3_lg = "https://static.pexels.com/photos/38136/pexels-photo-38136.jpeg"
+
+high_school = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ravenna_High_School_1.jpg/1280px-Ravenna_High_School_1.jpg"
