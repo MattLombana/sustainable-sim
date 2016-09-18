@@ -1,8 +1,10 @@
 # Template File (Examples), copy and edit to your own specification
 
-filename: capture.jpg
 server:
   username: root
   ip_address: 10.20.30.40
   photo_path: /tmp
+api:
+  url: api.microsoft.ai/emotion
+  subscription_key: abcdefghijklmnopqrstuvwxyz0123456789
 happiness_threshold: .90
