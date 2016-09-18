@@ -7,3 +7,5 @@ hiking = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Mohonk_Mount
 forest_3_lg = "https://static.pexels.com/photos/38136/pexels-photo-38136.jpeg"
 
 high_school = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ravenna_High_School_1.jpg/1280px-Ravenna_High_School_1.jpg"
+
+waterfall = "http://ithacafingerlakes.com/wp-content/uploads/2015/10/IMG_2327-1024x768.jpg"
