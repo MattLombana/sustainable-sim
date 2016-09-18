@@ -17,7 +17,10 @@ def isHappyEnough(filename):
         headers=header)
 
     response_json = response.json()
-    happiness = response_json[0]['scores']['happiness']
+    try:
+        happiness = response_json[0]['scores']['happiness']
+    except:
+        happiness = 0
     print (happiness)
     return happiness > threshold
 
