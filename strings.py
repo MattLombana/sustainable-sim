@@ -2,6 +2,7 @@
 instructions = "Hi! Welcome to Sustainable Sim! \n This is a prototypical choose-your-own-adventure/a dating sim where you can learn a thing or two about environmental conservation. Please note that we'll be using your camera to occasionally take your photos -- when you encounter a new environmental fact, smile big! Your potential partner is keeping track of how genuine you are about protecting the environment. \n Have fun exploring!"
 u = "You: "
 e = "Eve: "
+name = "Alex"
 a = name + ": "
 
 #desk first frame
