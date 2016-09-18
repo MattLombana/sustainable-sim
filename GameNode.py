@@ -6,7 +6,7 @@ class GameNode:
    def __init__(self, text, image, parent=None, key=None, canprogress=True):
       """Creates a new scene w/ image, text, and (optionally) next node"""
       self.image = Image.open(image)
-      self.text = "Alex: The text that will be displayed, P-kun."
+      self.text = text
       self.nexts = {}
       if (parent):
          parent.link(key, self)
@@ -31,7 +31,7 @@ class GameNode:
             print ("Can't find the next page!")
             return GameNode("Sorry, how did you end up here?", "lost.gif")
       else:
-         self.text = self.text + "\nOh no, P-kun! Are you really sure you mean that? You're not really smiling."
+         self.text = self.text + "\nOh no, Player! Are you really sure you mean that? You're not really smiling."
          return self
 
    def link(self, key, newnode):
