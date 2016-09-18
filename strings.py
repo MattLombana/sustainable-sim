@@ -3,38 +3,41 @@ instructions = "Hi! Welcome to Sustainable Sim! \n This is a prototypical choose
 u = "You: "
 e = "Eve: "
 name = "Alex"
-a = name + ": "
+a = "Alex: "
 
 #desk first frame
 desk_al_1 = "?: Hey, you!" #img: desk
+
 #desk second frame
-desk_resp_1 = "Oh, hey, " + name #img: al_class
-desk_al_2 = a + ": What are you up to after school?"
-desk_button_1 = "Nothing, I'm free tonight!" 
-desk_button_2 = "I'm hanging out with Eve." #->Hotel California
-desk_al_3 = a + "Cool! Do you want to go hiking with me?"
-desk_resp_2 = "Um... yeah!"
-desk_resp_3 = "Uh..."
+desk_second_prompt = ("{}Oh, hey, {}\n".format(u)
+"{}What are you up to after school?".format(a))
+desk_1_button_1 = "Nothing, I'm free tonight!"
+desk_1_button_2 = "I'm hanging out with Eve." #->Hotel California
+
+# desk 2.5
+desk_25_prompt = "Cool! Do you want to go hiking with me?".format(a)
+desk_25_button_1 = "yeah!"
+desk_25_button_2 = "Uh..."
+
 #desk third
-eve_ugh = e + "HIKING?! Can I join you?!?" #img: eve_barges_in
-#fourth
-al_resp = a + "Oh, yeah... That's fine, I guess!" #img: al_class_2
+desk_3_prompt = ("{}HIKING?! Can I join you?!?\n".format(e) #img: eve_barges_in
+"{}Oh, yeah... That's fine, I guess!".format(a) #img: al_class_2
+"{}That's great! I know the perfect place...".format(e)) #img: ev_class
+desk_3_button_1 = u + "Yeah, sure! Let's go."
+desk_3_button_2 = u + "Actually... I was hoping Alice and I go alone..."
+
 #next
-eve_be_sketch = e + "That's great! I know the perfect place..." #img: ev_class
-resp_to_eve_1 = u + "Yeah, sure! Let's go."
-resp_to_eve_2 = u + "Actually... I was hoping Alice and I go alone..."
-#next
-eve_persist = e + "Oh, but come on! I really want to show you this place!"
+eve_persist = "{}Oh, but come on! I really want to show you this place!".format(e)
 
 #fence
-al_scared = a + "This seems real sketchy you guys. Are you sure you want to go through here?" #img: scary_fence
-eve_danger = e + "Don't be a wuss, " + name + "! It's not like you'll get abducted by aliens in the forest or something!" #img: eve_fence; ignore blatant foreshadowing
-fence_reprimand = u + "Eve! You're not being a wuss, " + name + ". "
+fence_prompt = ("{}This seems real sketchy you guys. Are you sure you want to go through here?" #img: scary_fence
+"{}Don't be a wuss! It's not like you'll get abducted by aliens in the forest or something!".format(e)
+fence_reprimand = "{}Eve! You're not being a wuss, {}.".format(u, name))
 fence_resp = u + "I think it'll be fine, " + name + ". We'll stay really close together."
 al_resigned = a + "Alright..."
 
 #forest
-al_scared_2 = a + "What was that sound?" 
+al_scared_2 = a + "What was that sound?"
 forest_resp_1 = "I don't know... Let's find out."
 forest_resp_2 = "They're bears! Let's go, let's go, let's go!"
 
