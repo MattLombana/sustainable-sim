@@ -5,13 +5,13 @@ class Game:
     end_node = gn("Thanks for playing our game!", "./assets/images/rome.gif")
     bad_ending_node = gn("Unfortunately, that was a bad choice. Better luck next time!", "./assets/images/pme.jpg", "End Game", end_node)
 
-    after_look_up = gn('after_look_up prompt', "./assets/images/b.gif")
+    #after_look_up = gn('after_look_up prompt', "./assets/images/b.gif")
 
-    look_up = gn("look_up prompt", "./assets/images/00-instr.jpg", "I'm hanging out with Eve.", after_look_up, "Nothing, I'm free tonight!", after_look_up)
+    look_up = gn("Alex: Oh hey, what are you doing after school?", "./assets/images/02-hialex.jpg", "Nothing, I'm free tonight!", None, "I'm hanging out with Eve.", None)
 
-    desk_node = gn("desk_node_prompt", "./assets/images/c.gif", "What?", look_up)
+    desk_node = gn("?: Hey, you!", "./assets/images/01-heyyou.jpg", "What?", look_up)
 
-    start_node = gn("This should be the first panel.", "./assets/images/Alex in High School.jpg", "Lets Get Going!", desk_node)
+    start_node = gn("Thanks for taking a look at our project.", "./assets/images/00-instr.jpg", "Lets Get Going!", desk_node)
 
 
 

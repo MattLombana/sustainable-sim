@@ -24,12 +24,12 @@ desk_25_button_2 = "Uh..."
 #desk third
 desk_3_prompt = "Eve: HIKING?! Can I join you?!?\n".format(e) #img: eve_barges_in
 "{}Oh, yeah... That's fine, I guess!".format(a) #img: al_class_2
-"{}That's great! I know the perfect place...".format(e)) #img: ev_class
+"{}That's great! I know the perfect place...".format(e)#img: ev_class
 eve_happy = "That's great! I know the perfect place..."
 agree = "Sounds good."
 
-desk_3_button_1 = u + "Yeah, sure! Let's go."
-desk_3_button_2 = u + "Actually... I was hoping Alice and I go alone..."
+desk_3_button_1 = "Yeah, sure! Let's go."
+desk_3_button_2 = "Actually... I was hoping Alice and I go alone..."
 
 #next
 eve_persist = "Oh, but come on! I really want to show you this place!"
@@ -38,23 +38,23 @@ eve_persist = "Oh, but come on! I really want to show you this place!"
 fence_prompt = "Alex: This seems real sketchy you guys. Are you sure you want to go through here?" #img: scary_fence
 "{}Don't be a wuss! It's not like you'll get abducted by aliens in the forest or something!".format(e)
 fence_reprimand = "Eve! You're not being a wuss, Alex."
-fence_resp = u + "I think it'll be fine. We'll stay really close together."
-al_resigned = a + "Alright..."
+fence_resp = "I think it'll be fine. We'll stay really close together."
+al_resigned = "Alright..."
 taunt = "Yeah, Alex, relax a little."
 
 #forest
-al_scared_2 = a + "What was that sound?"
+al_scared_2 = "What was that sound?"
 forest_resp_1 = "I don't know... Let's find out."
 forest_resp_2 = "They're bears! Let's go, let's go, let's go!"
 
 #waterfalls
-al_excited = a + "Oh! It's a pretty waterfall!"
-al_water_fact = a + "Oh, and it looks like there's a little water running now. I'm hoping that means that there's going to be enough water in the reservoir. More minerals have been getting into the municipal water supply than usual because of the low water levels and making the water all discolored. Maybe the filtration system can catch up now."
-al_pict_water = a + "Let's take a picture here! Say, water conservation!"
+al_excited = "Oh! It's a pretty waterfall!"
+al_water_fact = "Oh, and it looks like there's a little water running now. I'm hoping that means that there's going to be enough water in the reservoir. More minerals have been getting into the municipal water supply than usual because of the low water levels and making the water all discolored. Maybe the filtration system can catch up now."
+al_pict_water = "Let's take a picture here! Say, water conservation!"
 
 #bears
-al_surprised = a + "OMG it IS bears! Run, it's the Big Red Bears!"
-bear_fact = u = "This makes me think about how the Asiatic Black Bear is endangered because their gall bladders are sold as an expensive medicine."
+al_surprised = "OMG it IS bears! Run, it's the Big Red Bears!"
+bear_fact = "This makes me think about how the Asiatic Black Bear is endangered because their gall bladders are sold as an expensive medicine."
 #url: http://www.konicaminolta.com/kids/endangered_animals/library/field/asiatic-black-bear.html
 
 #falls and breaks ankle
@@ -67,7 +67,7 @@ saycheese = "Hey, let's take a picture. Say water conservation!"
 
 
 #Break ankle scene
-Break_ankle_prompt="Alex:Ah! Ouch!\nYou:Are you alright?\nAlex:I think I twisted my ankle. I really dont think I can go on."# al is on the ground 
+Break_ankle_prompt="Alex:Ah! Ouch!\nYou:Are you alright?\nAlex:I think I twisted my ankle. I really dont think I can go on."# al is on the ground
 response_1="Common on, get up! We can't keep Eve waiting"
 response_2=" Ok let me help you up and we can take a look at it!"
 # Flash Light scene
@@ -81,7 +81,7 @@ response_5="What?"# takes picture requries surprise
 #If not smile
 If_not_smile_prompt="Eve:User!!I said smile!"#else go into next mod
 #alein interaction
-Alein_interaction_prompt="Eve:And Mr. unidentified voice what do you mean by that he is the most environmentally concerned? Did you know that I recycled 2 pop cans last week?\nYou:Talking about recycling, Did you know the average person has the opportunity to recycle more than 25,000 cans in a lifetime?""
+Alein_interaction_prompt="Eve:And Mr. unidentified voice what do you mean by that he is the most environmentally concerned? Did you know that I recycled 2 pop cans last week?\nYou:Talking about recycling, Did you know the average person has the opportunity to recycle more than 25,000 cans in a lifetime?"
 
 
 
@@ -89,13 +89,13 @@ Alein_interaction_prompt="Eve:And Mr. unidentified voice what do you mean by tha
 #Sounds of beams on alex he is getting sucked in
 sucked_in_prompt="Alex:Oh God!What's happening?\nEve:Come on user let's go!\nYou:But what about Alex? We can't abandon him\nEve:We dont have time! We gotta get going!"
 response_3="Sorry Alex!I promise I'll come back!" #leads to node where you run into an alein
-response_4="No! I am not gonna leave him! We were all in this together!!" 
+response_4="No! I am not gonna leave him! We were all in this together!!"
 
 #next scene
-#flashlight goes off 
+#flashlight goes off
 
 
-#next screen blacks out , thud sounds 
+#next screen blacks out , thud sounds
 MUM_prompt="Mom:Honey! Wake up , you were talking in your sleep again!"
 #wakes up in bed
 wake_bed_prompt= "Mom:You need start getting ready! Your bus will be here any time now!\nYou:For what?\nMom:It's the last day of school"
@@ -105,10 +105,10 @@ at_school_promt="?:Hey you!"
 "........"
 
 
-#hell node 
+#hell node
 hell_prompt="Unfortunately that was a bad choice. Better luck next time."
 
 
-
-
-
+tesstvar1 = "I'm hanging out with Eve."
+tesstvar2 = "Nothing, I'm free tonight!"
+empty_string = "THIS IS EMPTY!!!"
