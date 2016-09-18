@@ -42,7 +42,7 @@ class MyFirstGUI:
         # runs picanalysis, creates new node. This is run again when getNext returns
         #    self.curr later on.
         if (not(self.curr.canprogress)):
-            self.curr.canprogress = isHappyEnough(camera, photoname)
+            self.curr.canprogress = isHappyEnough(photoname)
 
         self.curr = self.curr.getNext(key)
         self.choices = self.curr.getOptions()

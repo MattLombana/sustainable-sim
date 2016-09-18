@@ -7,7 +7,7 @@ import pygame.camera
 
 username = ss['server']['username']
 ip_address = ss['server']['ip_address']
-path = "{}/{}".format(ss['server']['photo_path'], filename)
+
 
 
 
@@ -26,6 +26,7 @@ def take_photo(camera, filename):
     Parameters:
         camera: a camera object
     """
+    path = "{}/{}".format(ss['server']['photo_path'], filename)
     img = camera.get_image()
     pygame.image.save(img, filename)
     os.system("scp {} {}@{}:{}".format(filename, username, ip_address, path))

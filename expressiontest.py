@@ -18,9 +18,9 @@ def isHappyEnough(filename):
 
     response_json = response.json()
     happiness = response_json[0]['scores']['happiness']
-    print happiness
+    print (happiness)
     return happiness > threshold
 
 
 if __name__ == '__main__':
-    print isHappyEnough()
+    print (isHappyEnough())
