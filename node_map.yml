@@ -1,0 +1,196 @@
+node_map.yml
+# file containing a button name mapping to its prompt, buttons, image, and whether or not a picture is taken
+#
+#   button_name:
+#   prompt: prompt_variable_name
+#   child_button_name_1: name1
+#   child_button_name_2: name2
+#   image: image_name.jpg
+#   take_photo: true
+Nearly 60 percent of a person's household water footprint can go toward lawn and garden maintenance.:
+  prompt: Break_ankle_prompt
+  child_button_name_1: response_1
+  child_button_name_2: response_2
+  image: 50-brokenankles.jpg
+  take_photo: false
+Come on on, get up! We can't keep Eve waiting:
+  prompt: hell_prompt
+  child_button_name_1: End Game
+  child_button_name_2: ""
+  image: 51_broken_ankles.jpg
+  take_photo: false
+
+Ok let me help you up and we can take a look at it!:
+  prompt: Flashlight_prompt
+  child_button_name_1: Next
+  child_button_name_2: ""
+  image: 52-lightpls.jpg
+  take_photo: false
+
+
+Next:
+  prompt: Tracer_beam_prompt
+  child_button_name_1: response_5
+  child_button_name_2: ""
+  image: 53_tractor.jpg
+  take_photo: true
+
+What?:
+  prompt: Alein_interaction_prompt
+  child_button_name_1: Continue
+  child_button_name_2: ""
+  image: 55-whaddyumean.jpg
+  take_photo: false
+
+Continue:
+  prompt: sucked_in_prompt
+  child_button_name_1: response_3
+  child_button_name_2: response_4
+  image: 56-kidnap.jpg
+  take_photo: false
+
+Sorry Alex!I promise I'll come back!:
+  prompt: hell_prompt
+  child_button_name_1: End Game
+  child_button_name_2: ""
+  image: lost.gif
+  take_photo: false
+No! I am not gonna leave him! We were all in this together!!:
+  prompt: MUM_prompt
+  child_button_name_1: Proceed
+  child_button_name_2: ""
+  image: 56-kidnap.jpg
+  take_photo: false
+Proceed:
+  prompt: wake_bed_prompt
+  child_button_name_1: response_7
+  child_button_name_2: ""
+  image: Black_screen.jpg
+  take_photo: false
+You:Mom Did you know that...:
+  prompt: at_school_promt
+  child_button_name_1: Finish Game
+  child_button_name_2: ""
+  image: image_name.jpg
+  take_photo: false
+
+Finish Game:
+  prompt: "Thanks for playing the game! Hope you enjoyed it!"
+  child_button_name_1: ""
+  child_button_name_2: ""
+  image: rome.gif
+  take_photo: false
+
+
+# file containing a button name mapping to its prompt, buttons, image, and whether or not a picture is taken
+#
+# button_name:
+#   prompt: prompt_variable_name
+#   child_button_name_1: name1
+#   child_button_name_2: name2
+#   image: image_name.jpg
+#   take_photo: true
+
+Let's get started!:
+  prompt: desk_al_1
+  child_button_name_1: what
+  child_button_name_2: ""
+  image: 01-heyyou.jpg
+  take_photo: false
+
+What?:
+  prompt: desk_second_prompt
+  child_button_name_1: desk_1_button_1
+  child_button_name_2: desk_1_button_2
+  image: 02-hialex.jpg
+  take_photo: false
+
+# hotel cali
+I'm hanging out with Eve.:
+  prompt: disappoint
+  child_button_name_1: ""
+  child_button_name_2: ""
+  image: lost.gif
+  take_photo: false
+
+Nothing, I'm free tonight!:
+  prompt: desk_25_prompt
+  child_button_name_1: desk_25_button_1 # yeah
+  child_button_name_2: desk_25_button_2 # uh
+  image: 03-wannahike.jpg
+  take_photo: false
+
+Yeah!:
+  prompt: desk_3_prompt
+  child_button_name_1: desk_3_button_1
+  child_button_name_2: desk_3_button_2
+  image: 04-hikingomg.jpg
+  take_photo: false
+
+Uh...:
+  prompt: desk_3_prompt
+  child_button_name_1: desk_3_button_1
+  child_button_name_2: desk_3_button_2
+  image: 04-hikingomg.jpg
+  take_photo: false
+
+Actually... I was hoping Alice and I go alone...:
+  prompt: eve_persist
+  child_button_name_1: desk_3_button_1
+  child_button_name_2: desk_3_button_2
+  image: 04-hikingomg.jpg
+  take_photo: false
+
+Yeah, sure! Let's go.:
+  prompt: eve_happy
+  child_button_name_1: agree
+  child_button_name_2: ""
+  image: 04-hikingomg.jpg
+  take_photo: false
+
+Sounds good.: # the node with the fence
+  prompt: fence_prompt
+  child_button_name_1: taunt
+  child_button_name_2: fence_reprimand
+  image: 06_alex_scared_sketchy_fence.jpg
+  take_photo: false
+
+
+# hotel cali
+Yeah, Alex, relax a little.:
+  prompt: adis
+  child_button_name_1: ""
+  child_button_name_2: ""
+  image: lost.gif
+  take_photo: false
+
+Eve! You're not being a wuss, Alex.:
+  prompt: al_scared_2
+  child_button_name_1: forest_resp_1
+  child_button_name_2: forest_resp_2
+  image: lost.gif
+  take_photo: false
+
+I don't know... Let's find out.:
+  prompt: al_excited
+  child_button_name_1: al_water_fact
+  child_button_name_2: al_pict_water
+  image: lost.gif
+  take_photo: false
+
+Oh, and it looks like there's a little water running now. I'm hoping that means that there's going to be enough water in the reservoir. More minerals have been getting into the municipal water supply than usual because of the low water levels and making the water all discolored. Maybe the filtration system can catch up now.:
+  prompt: saycheese
+  child_button_name_1: tip
+  child_button_name_2: ""
+  image: lost.gif
+  take_photo: true
+
+Let's take a picture here! Say, water conservation!:
+  prompt: saycheese
+  child_button_name_1: tip
+  child_button_name_2: ""
+  image: lost.gif
+  take_photo: true
+
+
+# They're bears! Let's go, let's go, let's go!:
