@@ -1,0 +1,37 @@
+# file containing a button name mapping to its prompt, buttons, image, and whether or not a picture is taken
+#
+# button_name:
+#   prompt: prompt_variable_name
+#   child_button_name_1: name1
+#   child_button_name_2: name2
+#   image: image_name.jpg
+#   take_photo: true
+
+Let's get started!:
+  prompt: Hey, you!
+  child_button_name_1: What?
+  child_button_name_2: ""
+  image: 01-heyyou.jpg
+  take_photo: false
+
+What?:
+  prompt: Oh, hey, what are you up to after school?
+  child_button_name_1: Nothing, I'm free tonight!
+  child_button_name_2: I'm hanging out with Eve.
+  image: 02-hialex.jpg
+  take_photo: false
+
+# hotel cali
+I'm hanging out with Eve.:
+  prompt: You had a fun evening hanging out with Eve, although Alex looked forlorn. Maybe try again for a more interesting adventure?
+  child_button_name_1: Close
+  child_button_name_2: ""
+  image: lost.gif
+  take_photo: false
+
+Nothing, I'm free tonight!:
+  prompt: Cool! Do you want to go hiking with me?
+  child_button_name_1: Yeah!
+  child_button_name_2: Uhh...
+  image: 03-wannahike.jpg
+  take_photo: false
