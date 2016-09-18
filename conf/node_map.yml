@@ -135,8 +135,8 @@ Uh...:
 
 Actually... I was hoping Alice and I go alone...:
   prompt: eve_persist
-  child_button_name_1: desk_3_button_1
-  child_button_name_2: desk_3_button_2
+  child_button_name_1: agree
+  child_button_name_2: empty_string
   image: 04-hikingomg.jpg
   take_photo: false
 

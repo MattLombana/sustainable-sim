@@ -35,8 +35,7 @@ desk_3_button_2 = "Actually... I was hoping Alice and I go alone..."
 eve_persist = "Oh, but come on! I really want to show you this place!"
 
 #fence
-fence_prompt = "Alex: This seems real sketchy you guys. Are you sure you want to go through here?" #img: scary_fence
-"{}Don't be a wuss! It's not like you'll get abducted by aliens in the forest or something!".format(e)
+fence_prompt = "Alex: This seems real sketchy you guys. Are you sure you want to go through here?\nDon't be a wuss! It's not like you'll get abducted by aliens in the forest or something!".format(e)
 fence_reprimand = "Eve! You're not being a wuss, Alex."
 fence_resp = "I think it'll be fine. We'll stay really close together."
 al_resigned = "Alright..."
@@ -111,4 +110,4 @@ hell_prompt="Unfortunately that was a bad choice. Better luck next time."
 
 tesstvar1 = "I'm hanging out with Eve."
 tesstvar2 = "Nothing, I'm free tonight!"
-empty_string = "THIS IS EMPTY!!!"
+empty_string = ""
