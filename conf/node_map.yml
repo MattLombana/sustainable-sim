@@ -1,0 +1,8 @@
+# file containing a button name mapping to its prompt, buttons, image, and whether or not a picture is taken
+#
+# button_name:
+#   prompt: prompt_variable_name
+#   child_button_name_1: name1
+#   child_button_name_2: name2
+#   image: image_name.jpg
+#   take_photo: true
