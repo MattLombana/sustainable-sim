@@ -1,4 +1,4 @@
-from tkinter import Label
+from _tkinter import label
 from PIL import ImageTk
 import capture
 import Game as g
