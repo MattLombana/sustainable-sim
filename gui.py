@@ -13,7 +13,7 @@ class MyFirstGUI:
         self.picCount = 1
         self.camera = capture.start_camera()
         game = g.Game()
-        self.current = game.start
+        self.current = game.start_node
         self.label = Label(master, text=self.current.getPrompt())
         self.B1 = tkinter.Button(master, text=self.current.button_1, command=lambda: self.update(self.current.child_1))
         self.B2 = tkinter.Button(master, text=self.current.button_2, command=lambda: self.update(self.current.child_2))
@@ -34,9 +34,6 @@ class MyFirstGUI:
         """update the image and the buttons to the next node, waiting
         for the camera and happiness judgement to happen if necessary.
         """
-        # if node == None:
-            # capture.stop_camera(camera)
-            # self.master.destroy()
 
         self.label['text'] = node.getPrompt()
         self.B1['text'] = node.button_1
@@ -53,8 +50,11 @@ class MyFirstGUI:
         self.panel.configure(image=self.img)
         self.panel.image = self.img
         self.current = node
+        node.createTree()
 
-
+        if self.current.getPrompt() == "Thanks for playing our game!":
+            capture.stop_camera(self.camera)
+            self.master.destroy()
         # nextnode = self.curr.getNext(key)
         # choices = list(self.curr.nexts.keys())
         # TODO: if cannot progress:
