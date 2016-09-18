@@ -7,5 +7,4 @@ server:
 api:
   url: api.microsoft.ai/emotion
   subscription_key: abcdefghijklmnopqrstuvwxyz0123456789
-filename: capture.jpg
 happiness_threshold: .90
