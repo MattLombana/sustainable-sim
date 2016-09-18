@@ -1,8 +1,10 @@
+from expressiontest import isHappyEnough
 from tkinter import Label
 from PIL import ImageTk
 import capture
 import Game as g
 import tkinter
+
 
 class MyFirstGUI:
     def __init__(self, master):
@@ -22,6 +24,7 @@ class MyFirstGUI:
         self.panel.image = self.img
         self.panel.pack()
 
+
     def update(self, key, camera):
         """update the image and the buttons to the next node, waiting
         for the camera and happiness judgement to happen if necessary.
@@ -30,7 +33,7 @@ class MyFirstGUI:
         self.choices = self.curr.getOptions()
 
         self.img = ImageTk.PhotoImage(self.curr.getImage())
-        self.panel.configure(image = self.img)
+        self.panel.configure(image=self.img)
         self.panel.image = self.img
 
         self.B["text"] = key
@@ -39,8 +42,9 @@ class MyFirstGUI:
         # choices = list(self.curr.nexts.keys())
         # TODO: if cannot progress:
         #   capture.take_photo(camera)
-        if len(choices) == 0:
-            capture.stop_camera(camera)
+        #if len(choices) == 0:
+        #    capture.stop_camera(camera)
+        is_happy_enough = isHappyEnough(key)
 
         # # self.curr = nextnode
         # print("something here")
