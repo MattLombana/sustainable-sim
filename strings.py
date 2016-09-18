@@ -38,6 +38,11 @@ al_scared_2 = a + "What was that sound?"
 forest_resp_1 = "I don't know... Let's find out."
 forest_resp_2 = "They're bears! Let's go, let's go, let's go!"
 
+#waterfalls
+al_excited = a + "Oh! It's a pretty waterfall!"
+al_water_fact = a + "Oh, and it looks like there's a little water running now. I'm hoping that means that there's going to be enough water in the reservoir. More minerals have been getting into the municipal water supply than usual because of the low water levels and making the water all discolored. Maybe the filtration system can catch up now."
+al_pict_water = a + "Let's take a picture here! Say, water conservation!"
+
 #bears
 al_surprised = a + "OMG it IS bears! Run, it's the Big Red Bears!"
 bear_fact = u = "This makes me think about how the Asiatic Black Bear is endangered because their gall bladders are sold as an expensive medicine."
