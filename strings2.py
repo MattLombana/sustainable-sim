@@ -33,7 +33,7 @@ MUM_prompt="Mom:Honey! Wake up , you were talking in your sleep again!"
 wake_bed_prompt= "Mom:You need start getting ready! Your bus will be here any time now!\nYou:For what?\nMom:It's the last day of school"
 response_7="You:Mom Did you know that..."
 #at school
-promt="?:Hey you!"
+at_school_promt="?:Hey you!"
 "........"
 
 
