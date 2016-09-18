@@ -7,9 +7,9 @@ class Game:
 
     after_look_up = gn('after_look_up prompt', "./assets/images/b.gif")
 
-    look_up = gn("look_up prompt", "./assets/images/alex.png")
+    look_up = gn("look_up prompt", "./assets/images/00-instr.jpg", "I'm hanging out with Eve.", after_look_up, "Nothing, I'm free tonight!", after_look_up)
 
-    desk_node = gn("desk_node_prompt", "./assets/images/c.gif", "look up", look_up)
+    desk_node = gn("desk_node_prompt", "./assets/images/c.gif", "What?", look_up)
 
     start_node = gn("This should be the first panel.", "./assets/images/Alex in High School.jpg", "Lets Get Going!", desk_node)
 

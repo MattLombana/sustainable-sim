@@ -34,6 +34,9 @@ class MyFirstGUI:
         """update the image and the buttons to the next node, waiting
         for the camera and happiness judgement to happen if necessary.
         """
+        if self.current.getPrompt() == "Thanks for playing our game!":
+            capture.stop_camera(self.camera)
+            self.master.destroy()
 
         self.label['text'] = node.getPrompt()
         self.B1['text'] = node.button_1
@@ -50,11 +53,9 @@ class MyFirstGUI:
         self.panel.configure(image=self.img)
         self.panel.image = self.img
         self.current = node
-        node.createTree()
+        node.child_1.createTree()
+        node.child_2.createTree()
 
-        if self.current.getPrompt() == "Thanks for playing our game!":
-            capture.stop_camera(self.camera)
-            self.master.destroy()
         # nextnode = self.curr.getNext(key)
         # choices = list(self.curr.nexts.keys())
         # TODO: if cannot progress:
