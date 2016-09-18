@@ -2,7 +2,7 @@ from GameNode import GameNode as gn
 
 class Game:
     end = gn("Thanks for playing our game!", "./assets/images/rome.gif")
-    start = gn("This should be the first panel.", "./assets/images/a.gif")
+    start = gn("This should be the first panel.", "./assets/images/Alex in High School.jpg")
 
     second = gn("You are being asked to take a photo right now", "./assets/images/b.gif", start, "Go from statrt to second.", False)
     second.link( "But all roads lead to", end)
