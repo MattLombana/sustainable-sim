@@ -61,13 +61,19 @@ class GameNode:
 
 
     def createTree(self):
+        if self.button_1 == "" and self.button_2 == "":
+            pass
         print("\n\n\n\n\nnode button 1: {}".format(self.button_1))
-        print("node button 2: {}".format(self.button_2))
+        print("node button 2: s{}e".format(self.button_2))
 
         prompt_1 = eval(nm['{}'.format(self.button_1)]['prompt'])
+        print("prompt 1 is: {}".format(prompt_1))
         prompt_2 = eval(nm['{}'.format(self.button_2)]['prompt'])
+        print("prompt 2 is: {}".format(prompt_2))
         image_1 = "./assets/images/" + nm['{}'.format(self.button_1)]['image']
+        print("IMage 1 is: {}".format(image_1))
         image_2 = "./assets/images/" + nm['{}'.format(self.button_2)]['image']
+        print("IMage 2 is: {}".format(image_2))
         child_1_button_1 = eval(nm['{}'.format(self.button_1)]['child_button_name_1'])
         print(child_1_button_1)
         child_1_button_2 = eval(nm['{}'.format(self.button_1)]['child_button_name_2'])
@@ -81,7 +87,7 @@ class GameNode:
 
         print("creating GameNode for {}".format(prompt_1))
         print("creating GameNode for {}".format(prompt_2))
-        child_node_1 = GameNode(prompt=prompt_1, image=image_2, button_1=child_1_button_1, child_1=None, button_2=child_1_button_2, child_2=None, can_progress=picture_1)
+        child_node_1 = GameNode(prompt=prompt_1, image=image_1, button_1=child_1_button_1, child_1=None, button_2=child_1_button_2, child_2=None, can_progress=picture_1)
 
         child_node_2 = GameNode(prompt=prompt_2, image=image_2, button_1=child_2_button_1, child_1=None, button_2=child_2_button_2, child_2=None, can_progress=picture_2)
 

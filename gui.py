@@ -34,6 +34,7 @@ class MyFirstGUI:
         """update the image and the buttons to the next node, waiting
         for the camera and happiness judgement to happen if necessary.
         """
+        print("node is: {}".format(node))
         if self.current.getPrompt() == "Thanks for playing our game!":
             capture.stop_camera(self.camera)
             self.master.destroy()
